@@ -1,0 +1,78 @@
+// SCSS Variables.
+$zuidwal-dark: navy;
+$zuidwal-light: skyblue;
+
+
+/* Using Element Selectors. */
+body {
+    background-color: $zuidwal-light;
+    color: $zuidwal-dark;
+    margin: 10px;
+}
+h1 {
+    background-color: $zuidwal-dark;
+    color: $zuidwal-light;
+    padding: 4px;
+}
+
+// SCSS Nesting.
+table {
+    border-collapse: collapse;
+    border: 2px solid $zuidwal-dark;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    th {
+        background-color: $zuidwal-dark;
+        color: $zuidwal-light;
+    }
+    td {
+        border-style: solid;
+        border-width: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        /* Using a Child Selector. */
+        & > p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* Using Class Selectors */
+.medal {
+    font-weight: bold;
+    font-style: italic;
+}
+// SCSS Inheritence
+.gold {@extend .medal; background-color: gold}
+.silver {@extend .medal; background-color: silver}
+.bronze {@extend .medal; background-color: #cd7f32}
+.top_48 {margin-top: 48px}
+
+/* Using an ID Selector, Descendant Selectors and PseudoClass Selectors. */
+#menu {
+    background-color: chocolate;
+    padding: 4px;
+
+    // Descendant Selector.
+    a {text-decoration: underline;}
+
+    // PseudoClass Selectors.
+    a:link {color: $zuidwal-dark;}
+    a:visited {color: $zuidwal-light}
+    a:hover {color: greenyellow}
+}
+
+
+/* Using @media to size the pictures. */
+
+@media (min-width: 840px) {.img_800 {}}
+@media (max-width: 839px) {.img_800 {width: 90%}}
+
+@media (min-width: 740px) {.img_700 {}}
+@media (max-width: 739px) {.img_700 {width: 90%}}
+
+@media (min-width: 440px) {.img_400 {}}
+@media (max-width: 439px) {.img_400 {width: 90%}}
+
