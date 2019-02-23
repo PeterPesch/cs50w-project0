@@ -1,0 +1,94 @@
+/* Using Element Selectors. */
+body {
+  background-color: skyblue;
+  color: navy;
+  margin: 10px;
+}
+
+h1 {
+  background-color: navy;
+  color: skyblue;
+  padding: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid navy;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+table th {
+  background-color: navy;
+  color: skyblue;
+}
+table td {
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  /* Using a Child Selector. */
+}
+table td > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Using Class Selectors */
+.medal, .bronze, .silver, .gold {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.silver {
+  background-color: silver;
+}
+
+.bronze {
+  background-color: #cd7f32;
+}
+
+.top_48 {
+  margin-top: 48px;
+}
+
+/* Using an ID Selector, Descendant Selectors and PseudoClass Selectors. */
+#menu {
+  background-color: chocolate;
+  padding: 4px;
+}
+#menu a {
+  text-decoration: underline;
+}
+#menu a:link {
+  color: navy;
+}
+#menu a:visited {
+  color: skyblue;
+}
+#menu a:hover {
+  color: greenyellow;
+}
+
+/* Using @media to size the pictures. */
+@media (max-width: 839px) {
+  .img_800 {
+    width: 90%;
+  }
+}
+@media (max-width: 739px) {
+  .img_700 {
+    width: 90%;
+  }
+}
+@media (max-width: 439px) {
+  .img_400 {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
