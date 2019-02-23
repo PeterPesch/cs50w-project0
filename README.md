@@ -35,4 +35,4 @@ For this project, I created a website consisting of 4 Web Pages:
 | SCSS Nesting                              | Used in the Table styling.                                                         |
 | SCSS Inheritance                          | Used in styling .gold, .silver and .bronze .                                       |
 | A Readme.md file                          | You are currently reading it.                                                      |
-| Screencast video on YouTube               | To Do. Link will be added to the `Home` page.                                      |
+| Screencast video on YouTube               | The screencast can be found at https://www.youtube.com/watch?v=tBxAepcw-oE.        |
